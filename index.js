@@ -2,7 +2,6 @@ const express = require('express')
 const { getAllAuthors, getAuthorsById } = require('./controller/authors')
 const { getAllGenres, getGenresById } = require('./controller/genres')
 const { getAllNovels, getNovelsById } = require('./controller/novels')
-// const products = require('./models/products')
 
 const app = express()
 
