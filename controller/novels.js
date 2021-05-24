@@ -6,6 +6,17 @@ const getAllNovels = async (request, response) => {
   return response.send(novels)
 }
 
+const getNovelsById = async (request, response) => {
+  const { id } = request.params
+  const novels = await models.Novels.findOne({
+    where: { id },
+    include: [{ model: models.Authors }, { model: models.Genres }]
+  })
 
-module.exports = { getAllNovels }
+  return novels
+    ? response.send(novels)
+    : response.sendStatus(404)
+}
+
+module.exports = { getAllNovels, getNovelsById }
 

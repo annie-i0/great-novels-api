@@ -1,22 +1,22 @@
 const express = require('express')
-const { getAllAuthors, getAuthorById } = require('./controller/authors')
-const { getAllGenres, getGenreById} = require('./controller/genres')
-const { getAllNovels, getNovelById} = require('./controller/novels')
+const { getAllAuthors, getAuthorsById } = require('./controller/authors')
+const { getAllGenres, getGenresById } = require('./controller/genres')
+const { getAllNovels, getNovelsById } = require('./controller/novels')
 // const products = require('./models/products')
 
 const app = express()
 
 app.get('/authors', getAllAuthors)
 
-app.get('/authors/id:', getAuthorById)
+app.get('/authors/id:', getAuthorsById)
 
 app.get('/genres', getAllGenres)
 
-app.get('/genres/id:', getGenreById)
+app.get('/genres/id:', getGenresById)
 
-app.get('/novels, getAllNovels)
+app.get('/novels', getAllNovels)
 
-app.get('/novels/id:', getNovelById)
+app.get('/novels/id:', getNovelsById)
 
 app.all('*', (request, response) => {
   return response.sendStatus(404)
