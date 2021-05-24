@@ -10,7 +10,10 @@ const getNovelsById = async (request, response) => {
   const { id } = request.params
   const novels = await models.Novels.findOne({
     where: { id },
-    include: [{ model: models.Authors }, { model: models.Genres }]
+    include: [{
+      model: models.Authors,
+      include: [{ model: models.Genres }]
+    }]
   })
 
   return novels
