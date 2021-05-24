@@ -8,9 +8,9 @@ const getAllAuthors = async (request, response) => {
 
 const getAuthorsById = async (request, response) => {
   const { id } = request.params
-  const authors = await models.authors.findOne({
+  const authors = await models.Authors.findOne({
     where: { id },
-    include: [{ model: models.authors.novels, include: [models.genres] }]
+    include: [{ model: models.Authors.Novels }, { model: models.Genres }]
   })
 
   return authors
