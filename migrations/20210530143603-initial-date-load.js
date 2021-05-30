@@ -4,7 +4,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('authors', [{
       firstName: 'Bram',
-      lastName: 'Stroker'
+      lastName: 'Stoker'
     }, {
       firstName: 'Oscar',
       lastName: 'Wilde'
@@ -95,7 +95,7 @@ module.exports = {
     }, {
       title: 'Things Fall Apart',
       authorId: 15
-    }, {
+
 
     }])
 
@@ -144,49 +144,49 @@ module.exports = {
 
     return queryInterface.bulkInsert('novelsGenres', [{
       novelId: 1,
-      gereId: 1
+      genreId: 1
     }, {
       novelId: 2,
-      gereId: 2
+      genreId: 2
     }, {
       novelId: 3,
-      gereId: 3
+      genreId: 3
     }, {
       novelId: 4,
-      gereId: 4
+      genreId: 4
     }, {
       novelId: 5,
-      gereId: 5
+      genreId: 5
     }, {
       novelId: 6,
-      gereId: 6
+      genreId: 6
     }, {
       novelId: 7,
-      gereId: 7
+      genreId: 7
     }, {
       novelId: 8,
-      gereId: 8
+      genreId: 8
     }, {
       novelId: 9,
-      gereId: 9
+      genreId: 9
     }, {
       novelId: 10,
-      gereId: 10
+      genreId: 10
     }, {
       novelId: 11,
-      gereId: 11
+      genreId: 11
     }, {
       novelId: 12,
-      gereId: 12
+      genreId: 12
     }, {
       novelId: 13,
-      gereId: 13
+      genreId: 13
     }, {
       novelId: 14,
-      gereId: 144
+      genreId: 14
     }, {
       novelId: 15,
-      gereId: 15
+      genreId: 15
     }, {
 
     }])
