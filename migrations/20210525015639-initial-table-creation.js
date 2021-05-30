@@ -28,7 +28,7 @@ module.exports = {
       deletedAt: { type: Sequelize.DATE },
     })
 
-    await queryInterface.createTable('novelsGenres', {
+    return queryInterface.createTable('novelsGenres', {
       genreId: { type: Sequelize.INTEGER, references: { model: Genres, key: 'id' } },
       novelId: { type: Sequelize.INTEGER, references: { model: Novels, key: 'id' } },
       createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP') },

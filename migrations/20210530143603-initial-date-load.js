@@ -124,15 +124,70 @@ module.exports = {
     }, {
       name: 'Mystery'
     }, {
-      name: 'Dracula'
+      name: 'Crime'
     }, {
-      name: 'Mystery'
+      name: 'Thriller'
     }, {
-      name: 'Dracula'
+      name: 'Science Fiction'
     }, {
-      name: 'Mystery'
+      name: 'Horror'
     }, {
-      name: 'Dracula'
+      name: 'Russian Literature'
+    }, {
+      name: 'Dystopia'
+    }, {
+      name: 'Time Travel'
+    }, {
+      name: 'African Literature'
+
+    }])
+
+    return queryInterface.bulkInsert('novelsGenres', [{
+      novelId: 1,
+      gereId: 1
+    }, {
+      novelId: 2,
+      gereId: 2
+    }, {
+      novelId: 3,
+      gereId: 3
+    }, {
+      novelId: 4,
+      gereId: 4
+    }, {
+      novelId: 5,
+      gereId: 5
+    }, {
+      novelId: 6,
+      gereId: 6
+    }, {
+      novelId: 7,
+      gereId: 7
+    }, {
+      novelId: 8,
+      gereId: 8
+    }, {
+      novelId: 9,
+      gereId: 9
+    }, {
+      novelId: 10,
+      gereId: 10
+    }, {
+      novelId: 11,
+      gereId: 11
+    }, {
+      novelId: 12,
+      gereId: 12
+    }, {
+      novelId: 13,
+      gereId: 13
+    }, {
+      novelId: 14,
+      gereId: 144
+    }, {
+      novelId: 15,
+      gereId: 15
+    }, {
 
     }])
   },
